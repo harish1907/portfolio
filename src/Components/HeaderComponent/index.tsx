@@ -44,13 +44,13 @@ const HeaderComponent = () => {
                   <li className="scroll-to-section">
                     <a href="#newsletter">Newsletter</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <div className="gradient-button">
                       <a id="modal_trigger" href="#modal">
                         <i className="fa fa-sign-in-alt"></i> Sign In Now
                       </a>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
                 <a
                   className="menu-trigger"

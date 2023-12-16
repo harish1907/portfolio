@@ -5,30 +5,55 @@ import ContentBox from "../../Components/ContentBox";
 import AboutRightDec from "../../extra/assets/images/about-right-dec.png";
 import Quote from "../../extra/assets/images/quote.png";
 import ClientImage from "../../extra/assets/images/client-image.jpg";
-import PriceTableImg1 from "../../extra/assets/images/pricing-table-01.png";
+import Harish from "../../extra/assets/images/harish.png";
+import Yash from "../../extra/assets/images/yash.jpeg";
 import WhiteLogo from "../../extra/assets/images/white-logo.png";
 import { useEffect } from "react";
 import WowComponent from "../../WowComponent";
+import LinkedInComp from "../../Components/LinkedInComp";
 
 const boxText = [
   {
-    heading: "App Development with React Native",
-    text: `Crafting intuitive and powerful mobile experiences`,
+    heading: "App Development with React Native.",
+    text: `Crafting intuitive and powerful mobile experiences in React Native, where creativity meets functionality, to seamlessly connect users with innovative solutions.`,
     serviceType: "first-service",
   },
   {
-    heading: "Web Development with Django",
-    text: `Building robust and scalable web solutions`,
+    heading: "Backend microservices management.",
+    text: `Building robust and scalable web solutions in React Native, bridging the gap between performance and user experience for a cutting-edge digital presence.`,
     serviceType: "second-service",
   },
   {
-    heading: "Web Development with React.js",
-    text: `Designing interactive and dynamic web applications`,
+    heading: "Responsive Web Development.",
+    text: `Designing interactive and dynamic web applications with React Native, where user engagement and performance converge to deliver a cutting-edge browsing experience.`,
     serviceType: "third-service",
   },
   {
-    heading: `AI Chatbots`,
-    text: "Revolutionizing communication with intelligent bots ",
+    heading: `AI Chatbots and IoT devices`,
+    text: "Empowering users through immersive experiences, leveraging the capabilities of React Native to bridge the gap between cutting-edge technology and user-centric design.",
+    serviceType: "fourth-service",
+  },
+];
+
+const boxText2 = [
+  {
+    heading: "App Development with React Native.",
+    text: `Flexible pricing to match your app's needs.`,
+    serviceType: "first-service",
+  },
+  {
+    heading: "Backend microservices management.",
+    text: `Tailored solutions at competitive rates.`,
+    serviceType: "second-service",
+  },
+  {
+    heading: "Responsive Web Development.",
+    text: `Innovative web solutions with clear pricing.`,
+    serviceType: "third-service",
+  },
+  {
+    heading: `AI Chatbots and IoT devices`,
+    text: "Shaping the future with transparent costs.",
     serviceType: "fourth-service",
   },
 ];
@@ -63,24 +88,17 @@ const HomeScreen = () => {
                   >
                     <div className="row">
                       <div className="col-lg-12">
-                        <h2>Explore Our Portfolio & Witness Innovation Unleashed</h2>
+                        <h2>
+                          Embark on a Journey Through Our Work | Where
+                          Innovation Takes Center Stage
+                        </h2>
                         <p>
-                        Chain App Dev is not just a team,
-                        we're your creative partners, a dynamic squad of five experts, each excelling in diverse domains. 
-                        Our mission is to turn your ideas into digital reality, and we're here to make that journey exhilarating
+                          Chain App Dev is not just a team, we're your creative
+                          partners, a dynamic squad of five experts, each
+                          excelling in diverse domains. Our mission is to turn
+                          your ideas into digital reality, and we're here to
+                          make that journey exhilarating
                         </p>
-                      </div>
-                      <div className="col-lg-12">
-                        <div className="white-button first-button scroll-to-section">
-                          <a href="#contact">
-                            Free Quote <i className="fab fa-apple"></i>
-                          </a>
-                        </div>
-                        <div className="white-button scroll-to-section">
-                          <a href="#contact">
-                            Free Quote <i className="fab fa-google-play"></i>
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -114,9 +132,11 @@ const HomeScreen = () => {
                 </h4>
                 <img src={HeadingLincImg} alt="" />
                 <p>
-                At Chain App Dev, our passion fuels innovation. 
-                From crafting seamless apps with React Native to shaping dynamic web experiences with Django and React.js, 
-                pioneering IoT device development, and revolutionizing communication with AI chatbots, our portfolio is a testament to excellence.
+                  At Chain App Dev, our passion fuels innovation. From crafting
+                  seamless apps with React Native to shaping dynamic web
+                  experiences with Django and React.js, pioneering IoT device
+                  development, and revolutionizing communication with AI
+                  chatbots, our portfolio is a testament to excellence.
                 </p>
               </div>
             </div>
@@ -131,6 +151,7 @@ const HomeScreen = () => {
                   heading={item.heading}
                   text={item.text}
                   serviceType={item.serviceType}
+                  icon
                 />
               );
             })}
@@ -144,13 +165,10 @@ const HomeScreen = () => {
             <div className="col-lg-6 align-self-center">
               <div className="section-heading">
                 <h4>
-                  About <em>What We Do</em> &amp; Who We Are
+                  <em>What We Do</em> &amp; Who We Are
                 </h4>
                 <img src={HeadingLincImg} alt="" />
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eismod tempor incididunt ut labore et dolore magna.
-                </p>
+                <p>Discover Our Expertise and Ready for a transformation</p>
               </div>
               <div className="row">
                 <div className="col-lg-6">
@@ -187,14 +205,9 @@ const HomeScreen = () => {
                 </div>
                 <div className="col-lg-12">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eismod tempor idunte ut labore et dolore adipiscing
-                    magna.
+                    At Chain App Dev, we tailor our comprehensive services to
+                    meet your unique needs. Dive into our world of expertise
                   </p>
-                  <div className="gradient-button">
-                    <a href="#">Start 14-Day Free Trial</a>
-                  </div>
-                  <span>*No Credit Card Required</span>
                 </div>
               </div>
             </div>
@@ -213,12 +226,14 @@ const HomeScreen = () => {
             <div className="col-lg-8 offset-lg-2">
               <div className="section-heading">
                 <h4>
-                  Check What <em>The Clients Say</em> About Our App Dev
+                  Your vision, our expertise. <em>Meet the Team</em>
                 </h4>
                 <img src={HeadingLincImg} alt="" />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eismod tempor incididunt ut labore et dolore magna.
+                  At Chain App Dev, meet our team of five passionate experts who
+                  have successfully delivered over 90+ projects, blending
+                  creativity with technical prowess. <br />
+                  We don't just create; we innovate.
                 </p>
               </div>
             </div>
@@ -232,11 +247,13 @@ const HomeScreen = () => {
                           <div className="thumb">
                             <div className="row">
                               <div className="col-lg-4 col-sm-4 col-12">
-                                <h4>David Martino Co</h4>
-                                <span className="date">30 November 2021</span>
+                                <h4>Harish Chaudhary</h4>
+                                <LinkedInComp url="https://www.linkedin.com/in/harish1903/" />
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
-                                <span className="category">Financial Apps</span>
+                                <span className="category">
+                                  MERN Stack with React Native Developer
+                                </span>
                               </div>
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <i className="fa fa-star"></i>
@@ -253,12 +270,12 @@ const HomeScreen = () => {
                           <div className="thumb">
                             <div className="row">
                               <div className="col-lg-4 col-sm-4 col-12">
-                                <h4>Jake Harris Nyo</h4>
-                                <span className="date">29 November 2021</span>
+                                <h4>Yash Garg</h4>
+                                <LinkedInComp url="https://www.linkedin.com/in/yashgarg11131/" />
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
-                                  Digital Business
+                                  IoT and AI developer
                                 </span>
                               </div>
                               <div className="col-lg-4 col-sm-4 col-12">
@@ -276,12 +293,12 @@ const HomeScreen = () => {
                           <div className="thumb">
                             <div className="row">
                               <div className="col-lg-4 col-sm-4 col-12">
-                                <h4>May Catherina</h4>
-                                <span className="date">27 November 2021</span>
+                                <h4>Piyush Sharma</h4>
+                                <LinkedInComp url="https://www.linkedin.com/in/piyush-sharma-20b029202/" />
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
-                                  Business &amp; Economics
+                                  Full Stack Developer
                                 </span>
                               </div>
                               <div className="col-lg-4 col-sm-4 col-12">
@@ -290,7 +307,7 @@ const HomeScreen = () => {
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
                                 <i className="fa fa-star"></i>
-                                <span className="rating">4.7</span>
+                                <span className="rating">4.2</span>
                               </div>
                             </div>
                           </div>
@@ -299,35 +316,12 @@ const HomeScreen = () => {
                           <div className="thumb">
                             <div className="row">
                               <div className="col-lg-4 col-sm-4 col-12">
-                                <h4>Random User</h4>
-                                <span className="date">24 November 2021</span>
+                                <h4>Deepak Pradhan</h4>
+                                <LinkedInComp url="https://www.linkedin.com/in/piyush-sharma-20b029202/" />
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
-                                  New App Ecosystem
-                                </span>
-                              </div>
-                              <div className="col-lg-4 col-sm-4 col-12">
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <i className="fa fa-star"></i>
-                                <span className="rating">3.9</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="last-thumb">
-                          <div className="thumb">
-                            <div className="row">
-                              <div className="col-lg-4 col-sm-4 col-12">
-                                <h4>Mark Amber Do</h4>
-                                <span className="date">21 November 2021</span>
-                              </div>
-                              <div className="col-lg-4 col-sm-4 d-none d-sm-block">
-                                <span className="category">
-                                  Web Development
+                                  Front End Developer
                                 </span>
                               </div>
                               <div className="col-lg-4 col-sm-4 col-12">
@@ -353,19 +347,23 @@ const HomeScreen = () => {
                                   <div className="client-content">
                                     <img src={Quote} alt="" />
                                     <p>
-                                      “Lorem ipsum dolor sit amet, consectetur
-                                      adpiscing elit, sed do eismod tempor
-                                      idunte ut labore et dolore magna aliqua
-                                      darwin kengan lorem ipsum dolor sit amet,
-                                      consectetur picing elit massive big
-                                      blasta.”
+                                      "I am Harish, a dedicated MERN STACK
+                                      developer specializing in REACT NATIVE,
+                                      with over 4 years of experience in
+                                      development. My primary focus is on
+                                      delivering seamless applications with
+                                      clean code to ensure client satisfaction.
+                                      I possess a deep understanding of client
+                                      requirements, allowing me to craft the
+                                      best application architecture tailored to
+                                      their needs."
                                     </p>
                                   </div>
                                   <div className="down-content">
-                                    <img src={ClientImage} alt="" />
+                                    <img src={Harish} alt="" />
                                     <div className="right-content">
-                                      <h4>David Martino</h4>
-                                      <span>CEO of David Company</span>
+                                      <h4>Harish Chaudhary</h4>
+                                      <span>Team Lead</span>
                                     </div>
                                   </div>
                                 </div>
@@ -390,10 +388,10 @@ const HomeScreen = () => {
                                     </p>
                                   </div>
                                   <div className="down-content">
-                                    <img src={ClientImage} alt="" />
+                                    <img src={Yash} alt="" />
                                     <div className="right-content">
-                                      <h4>Jake H. Nyo</h4>
-                                      <span>CTO of Digital Company</span>
+                                      <h4>Yash Garg</h4>
+                                      <span>IoT and AI developer</span>
                                     </div>
                                   </div>
                                 </div>
@@ -409,19 +407,19 @@ const HomeScreen = () => {
                                   <div className="client-content">
                                     <img src={Quote} alt="" />
                                     <p>
-                                      “May, Lorem ipsum dolor sit amet,
-                                      consectetur adpiscing elit, sed do eismod
-                                      tempor idunte ut labore et dolore magna
-                                      aliqua darwin kengan lorem ipsum dolor sit
-                                      amet, consectetur picing elit massive big
-                                      blasta.”
+                                      “Hello, I'm Piyush, a dedicated Full Stack
+                                      Developer with a strong emphasis on
+                                      Python. My passion lies in crafting AI
+                                      chatbots, and I thrive on the challenges
+                                      of model training. Let's build innovative
+                                      solutions together!”
                                     </p>
                                   </div>
                                   <div className="down-content">
                                     <img src={ClientImage} alt="" />
                                     <div className="right-content">
-                                      <h4>May C.</h4>
-                                      <span>Founder of Catherina Co.</span>
+                                      <h4>Piyush Sharma</h4>
+                                      <span>Full Stack Developer</span>
                                     </div>
                                   </div>
                                 </div>
@@ -437,47 +435,19 @@ const HomeScreen = () => {
                                   <div className="client-content">
                                     <img src={Quote} alt="" />
                                     <p>
-                                      “Lorem ipsum dolor sit amet, consectetur
-                                      adpiscing elit, sed do eismod tempor
-                                      idunte ut labore et dolore magna aliqua
-                                      darwin kengan lorem ipsum dolor sit amet,
-                                      consectetur picing elit massive big
-                                      blasta.”
+                                      "I'm Deepak, a passionate frontend
+                                      developer with a focus on creating
+                                      seamless user experiences. My expertise
+                                      lies in harnessing the power of React.js
+                                      and Next.js to build dynamic and
+                                      responsive web applications."
                                     </p>
                                   </div>
                                   <div className="down-content">
                                     <img src={ClientImage} alt="" />
                                     <div className="right-content">
-                                      <h4>Random Staff</h4>
-                                      <span>Manager, Digital Company</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <div className="thumb">
-                              <div className="row">
-                                <div className="col-lg-12">
-                                  <div className="client-content">
-                                    <img src={Quote} alt="" />
-                                    <p>
-                                      “Mark, Lorem ipsum dolor sit amet,
-                                      consectetur adpiscing elit, sed do eismod
-                                      tempor idunte ut labore et dolore magna
-                                      aliqua darwin kengan lorem ipsum dolor sit
-                                      amet, consectetur picing elit massive big
-                                      blasta.”
-                                    </p>
-                                  </div>
-                                  <div className="down-content">
-                                    <img src={ClientImage} alt="" />
-                                    <div className="right-content">
-                                      <h4>Mark Am</h4>
-                                      <span>CTO, Amber Do Company</span>
+                                      <h4>Deepak Pradhan</h4>
+                                      <span>Front End Developer</span>
                                     </div>
                                   </div>
                                 </div>
@@ -501,75 +471,28 @@ const HomeScreen = () => {
             <div className="col-lg-8 offset-lg-2">
               <div className="section-heading">
                 <h4>
-                  We Have The Best Pre-Order <em>Prices</em> You Can Get
+                  We Have The Best <em>Prices</em> You Can Get
                 </h4>
                 <img src={HeadingLincImg} alt="" />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eismod tempor incididunt ut labore et dolore magna.
+                  Transparent Pricing for Quality Services Experience
+                  transparency in every aspect, including pricing. While each
+                  project is unique, here's a glimpse of our pricing structure
                 </p>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="pricing-item-regular">
-                <span className="price">$12</span>
-                <h4>Standard Plan App</h4>
-                <div className="icon">
-                  <img src={PriceTableImg1} alt="" />
-                </div>
-                <ul>
-                  <li>Lorem Ipsum Dolores</li>
-                  <li>20 TB of Storage</li>
-                  <li className="non-function">Life-time Support</li>
-                  <li className="non-function">Premium Add-Ons</li>
-                  <li className="non-function">Fastest Network</li>
-                  <li className="non-function">More Options</li>
-                </ul>
-                <div className="border-button">
-                  <a href="#">Purchase This Plan Now</a>
-                </div>
+              <div className="row">
+                {boxText2.map((item: any) => {
+                  return (
+                    <ContentBox
+                      key={item.heading}
+                      heading={item.heading}
+                      text={item.text}
+                      serviceType={item.serviceType}
+                    />
+                  );
+                })}
               </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="pricing-item-pro">
-                <span className="price">$25</span>
-                <h4>Business Plan App</h4>
-                <div className="icon">
-                  <img src={PriceTableImg1} alt="" />
-                </div>
-                <ul>
-                  <li>Lorem Ipsum Dolores</li>
-                  <li>50 TB of Storage</li>
-                  <li>Life-time Support</li>
-                  <li>Premium Add-Ons</li>
-                  <li className="non-function">Fastest Network</li>
-                  <li className="non-function">More Options</li>
-                </ul>
-                <div className="border-button">
-                  <a href="#">Purchase This Plan Now</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="pricing-item-regular">
-                <span className="price">$66</span>
-                <h4>Premium Plan App</h4>
-                <div className="icon">
-                  <img src={PriceTableImg1} alt="" />
-                </div>
-                <ul>
-                  <li>Lorem Ipsum Dolores</li>
-                  <li>120 TB of Storage</li>
-                  <li>Life-time Support</li>
-                  <li>Premium Add-Ons</li>
-                  <li>Fastest Network</li>
-                  <li>More Options</li>
-                </ul>
-                <div className="border-button">
-                  <a href="#">Purchase This Plan Now</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -579,9 +502,12 @@ const HomeScreen = () => {
           <div className="row">
             <div className="col-lg-8 offset-lg-2">
               <div className="section-heading">
-                <h4>
-                  Join our mailing list to receive the news &amp; latest trends
-                </h4>
+                <h4>Stay Updated with Chain App Dev</h4>
+                <h5 style={{ color: "#FFF" }}>
+                  {" "}
+                  Subscribe to our newsletter for the latest trends, industry
+                  insights, and exciting projects.
+                </h5>
               </div>
             </div>
             <div className="col-lg-6 offset-lg-3">
@@ -606,6 +532,12 @@ const HomeScreen = () => {
                     </fieldset>
                   </div>
                 </div>
+                <h6
+                  style={{ color: "#FFF", textAlign: "center", margin: "1rem" }}
+                >
+                  Enter your email above to stay ahead in the digital innovation
+                  game.
+                </h6>
               </form>
             </div>
           </div>
@@ -690,29 +622,20 @@ const HomeScreen = () => {
             </div>
             <div className="col-lg-3">
               <div className="footer-widget">
-                <h4>About Our Company</h4>
+                <h4>About Our Team</h4>
                 <div className="logo">
                   <img src={WhiteLogo} alt="" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore.
+                  Your journey with Chain App Dev begins here – where creativity
+                  meets experience.
                 </p>
               </div>
             </div>
             <div className="col-lg-12">
               <div className="copyright-text">
                 <p>
-                  Copyright © 2022 Chain App Dev Company. All Rights Reserved.
-                  <br />
-                  Design:{" "}
-                  <a
-                    href="https://templatemo.com/"
-                    target="_blank"
-                    title="css templates"
-                  >
-                    TemplateMo
-                  </a>
+                  Copyright © {(new Date()).getFullYear()} Chain App Dev Company. All Rights Reserved.
                 </p>
               </div>
             </div>

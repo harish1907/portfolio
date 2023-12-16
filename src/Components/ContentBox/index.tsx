@@ -1,8 +1,8 @@
-const ContentBox = ({ heading, text, serviceType }: any) => {
+const ContentBox = ({ heading, text, serviceType, icon }: any) => {
   return (
     <div className="col-lg-3">
       <div className={`service-item ${serviceType}`}>
-        <div className="icon"></div>
+        {icon && <div className="icon"></div>}
         <h4>{heading}</h4>
         <p>{text}</p>
         <div className="text-button">
