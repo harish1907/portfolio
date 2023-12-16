@@ -11,6 +11,7 @@ import WhiteLogo from "../../extra/assets/images/white-logo.png";
 import { useEffect } from "react";
 import WowComponent from "../../WowComponent";
 import LinkedInComp from "../../Components/LinkedInComp";
+import GithubComp from "../../Components/GithubComp";
 
 const boxText = [
   {
@@ -249,6 +250,7 @@ const HomeScreen = () => {
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <h4>Harish Chaudhary</h4>
                                 <LinkedInComp url="https://www.linkedin.com/in/harish1903/" />
+                                <GithubComp url="https://github.com/harish1907"/>
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
@@ -272,6 +274,7 @@ const HomeScreen = () => {
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <h4>Yash Garg</h4>
                                 <LinkedInComp url="https://www.linkedin.com/in/yashgarg11131/" />
+                                <GithubComp url="https://github.com/yashgarg11131"/>
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
@@ -318,6 +321,7 @@ const HomeScreen = () => {
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <h4>Deepak Pradhan</h4>
                                 <LinkedInComp url="https://www.linkedin.com/in/piyush-sharma-20b029202/" />
+                                <GithubComp url="https://github.com/Pradhan1999"/>
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
