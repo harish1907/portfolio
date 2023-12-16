@@ -12,31 +12,23 @@ import WowComponent from "../../WowComponent";
 
 const boxText = [
   {
-    heading: "App Maintenance",
-    text: `You are not allowed to redistribute this template ZIP file on
-        any other website.`,
+    heading: "App Development with React Native",
+    text: `Crafting intuitive and powerful mobile experiences`,
     serviceType: "first-service",
   },
   {
-    heading: "Rocket Speed of App",
-    text: `You are allowed to use the Chain App Dev HTML template. Feel
-        free to modify or edit this layout.`,
+    heading: "Web Development with Django",
+    text: `Building robust and scalable web solutions`,
     serviceType: "second-service",
   },
   {
-    heading: "Multi Workflow Idea",
-    text: `If this template is beneficial for your work, please support us
-        ${(
-          <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">
-            a little via PayPal
-          </a>
-        )}
-        . Thank you.`,
+    heading: "Web Development with React.js",
+    text: `Designing interactive and dynamic web applications`,
     serviceType: "third-service",
   },
   {
-    heading: `24/7 Help &amp; Support`,
-    text: "Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.",
+    heading: `AI Chatbots`,
+    text: "Revolutionizing communication with intelligent bots ",
     serviceType: "fourth-service",
   },
 ];
@@ -46,8 +38,8 @@ const HomeScreen = () => {
     new WowComponent({
       animateClass: "animated",
       offset: 50,
-      boxClass: "wow",
-      mobile: true,
+      boxClass: "wow", // Add a default value for boxClass
+      mobile: true, // Add a default value for mobile
     });
   }, []);
   return (
@@ -71,12 +63,11 @@ const HomeScreen = () => {
                   >
                     <div className="row">
                       <div className="col-lg-12">
-                        <h2>Get The Latest App From App Stores</h2>
+                        <h2>Explore Our Portfolio & Witness Innovation Unleashed</h2>
                         <p>
-                          Chain App Dev is an app landing page HTML5 template
-                          based on Bootstrap v5.1.3 CSS layout provided by
-                          TemplateMo, a great website to download free CSS
-                          templates.
+                        Chain App Dev is not just a team,
+                        we're your creative partners, a dynamic squad of five experts, each excelling in diverse domains. 
+                        Our mission is to turn your ideas into digital reality, and we're here to make that journey exhilarating
                         </p>
                       </div>
                       <div className="col-lg-12">
@@ -123,20 +114,9 @@ const HomeScreen = () => {
                 </h4>
                 <img src={HeadingLincImg} alt="" />
                 <p>
-                  If you need the greatest collection of HTML templates for your
-                  business, please visit{" "}
-                  <a
-                    rel="nofollow"
-                    href="https://www.toocss.com/"
-                    target="_blank"
-                  >
-                    TooCSS
-                  </a>{" "}
-                  Blog. If you need to have a contact form PHP script, go to{" "}
-                  <a href="https://templatemo.com/contact" target="_parent">
-                    our contact page
-                  </a>{" "}
-                  for more information.
+                At Chain App Dev, our passion fuels innovation. 
+                From crafting seamless apps with React Native to shaping dynamic web experiences with Django and React.js, 
+                pioneering IoT device development, and revolutionizing communication with AI chatbots, our portfolio is a testament to excellence.
                 </p>
               </div>
             </div>
