@@ -8,7 +8,7 @@ interface WowConfig {
 
 class WowComponent {
   private element: HTMLElement | null = null;
-  private boxes: HTMLCollectionOf<Element>;
+  private boxes: any;
   private scrolled: boolean = true;
   private interval: number | null = null;
 
@@ -26,25 +26,6 @@ class WowComponent {
     offset: 0,
     mobile: true,
   };
-
-  private util() {
-    return {
-      extend: (custom: any, defaults: any) => {
-        for (const key in custom) {
-          const value = custom[key];
-          if (value !== undefined) {
-            defaults[key] = value;
-          }
-        }
-        return defaults;
-      },
-      isMobile: (agent: string) => {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          agent
-        );
-      },
-    };
-  }
 
   private applyStyle(box: Element, hidden?: boolean) {
     const duration = box.getAttribute("data-wow-duration") || "";
@@ -89,7 +70,7 @@ class WowComponent {
   }
 
   private isVisible(box: Element) {
-    const offset = box.getAttribute("data-wow-offset") || this.config.offset;
+    const offset: any = box.getAttribute("data-wow-offset") || this.config.offset;
     const viewTop = window.pageYOffset;
     const viewBottom = viewTop + (this.element?.clientHeight || 0) - offset;
     const top = this.offsetTop(box);
@@ -132,10 +113,6 @@ class WowComponent {
         box.setAttribute("style", "visibility: visible;");
       }
     });
-  }
-
-  private disabled() {
-    return !this.config.mobile && this.util().isMobile(navigator.userAgent);
   }
 
   private start() {
