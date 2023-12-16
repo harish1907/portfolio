@@ -298,6 +298,7 @@ const HomeScreen = () => {
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <h4>Piyush Sharma</h4>
                                 <LinkedInComp url="https://www.linkedin.com/in/piyush-sharma-20b029202/" />
+                                <GithubComp url="https://github.com/piyushp12"/>
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
                                 <span className="category">
@@ -546,7 +547,7 @@ const HomeScreen = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div className="footer-widget">
                 <h4>Contact Us</h4>
                 <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
@@ -558,7 +559,7 @@ const HomeScreen = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div className="footer-widget">
                 <h4>About Us</h4>
                 <ul>
@@ -591,40 +592,7 @@ const HomeScreen = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3">
-              <div className="footer-widget">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li>
-                    <a href="#">Free Apps</a>
-                  </li>
-                  <li>
-                    <a href="#">App Engine</a>
-                  </li>
-                  <li>
-                    <a href="#">Programming</a>
-                  </li>
-                  <li>
-                    <a href="#">Development</a>
-                  </li>
-                  <li>
-                    <a href="#">App News</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#">App Dev Team</a>
-                  </li>
-                  <li>
-                    <a href="#">Digital Web</a>
-                  </li>
-                  <li>
-                    <a href="#">Normal Apps</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-3">
+            <div className="col-lg-4">
               <div className="footer-widget">
                 <h4>About Our Team</h4>
                 <div className="logo">
