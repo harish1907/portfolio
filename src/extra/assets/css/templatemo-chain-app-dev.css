@@ -1,3 +1,4 @@
+
 /*
 
 TemplateMo 570 Chain App Dev
@@ -147,12 +148,12 @@ body {
 }
 
 ::selection {
-  background: #4b8ef1;
+  background: #F17300;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #4b8ef1;
+  background: #F17300;
   color: #fff !important;
 }
 
@@ -187,7 +188,7 @@ body {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 .section-heading img {
@@ -207,7 +208,7 @@ body {
 .white-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
+  color: #F17300 !important;
   text-transform: capitalize;
   font-size: 15px;
   background-color: #fff;
@@ -223,7 +224,7 @@ body {
 }
 
 .white-button a:hover {
-  background-color: #4b8ef1;
+  background-color: #F17300;
   color: #fff !important;
 }
 
@@ -264,8 +265,8 @@ body {
 .border-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
-  border: 1px solid #4b8ef1;
+  color: #F17300 !important;
+  border: 1px solid #F17300;
   text-transform: capitalize;
   font-size: 15px;
   display: inline-block;
@@ -277,7 +278,7 @@ body {
 }
 
 .border-button a:hover {
-  background-color: #4b8ef1;
+  background-color: #F17300;
   color: #fff !important;
 }
 
@@ -289,7 +290,7 @@ header
 */
 
 .background-header {
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
   height: 80px!important;
   border-bottom: none !important;
   position: fixed!important;
@@ -297,6 +298,11 @@ header
   left: 0px;
   right: 0px;
   box-shadow: 0px 5px 8px rgba(0,0,0,0.03);
+  background: rgb(85,118,237);
+background: -moz-linear-gradient(90deg, rgba(85,118,237,1) 0%, rgba(69,158,242,1) 54%, rgba(54,192,248,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(85,118,237,1) 0%, rgba(69,158,242,1) 54%, rgba(54,192,248,1) 100%);
+background: linear-gradient(90deg, rgba(85,118,237,1) 0%, rgba(69,158,242,1) 54%, rgba(54,192,248,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5576ed",endColorstr="#36c0f8",GradientType=1);
 }
 
 .background-header .logo,
@@ -305,7 +311,7 @@ header
 }
 
 .background-header .main-nav .nav li:hover a {
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 .background-header .nav li a.active {
@@ -317,7 +323,7 @@ header
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #4b8ef1;
+  background-color: #F17300;
   content: '';
   left: 50%;
   bottom: -20px;
@@ -428,7 +434,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #4b8ef1!important;
+  color: #F17300 !important;
 }
 
 .header-area .main-nav .nav li:last-child a.active {
@@ -437,7 +443,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #4b8ef1!important;
+  color: #F17300!important;
   opacity: 1;
 }
 
@@ -499,7 +505,7 @@ header
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
   background: #fff;
-  color: #4b8ef1!important;
+  color: #F17300!important;
   padding-left: 25px;
 }
 
@@ -639,7 +645,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 @media (max-width: 1200px) {
@@ -679,7 +685,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #4b8ef1!important;
+    color: #F17300!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -741,7 +747,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #4b8ef1!important;
+    color: #F17300!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -855,7 +861,7 @@ preloader
     height: 16px;
     top: 12px;
     left: 15px;
-    background: #4b8ef1;
+    background: #F17300;
     border-radius: 50%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -878,7 +884,7 @@ preloader
     width: 16px;
     height: 16px;
     margin-left: 16px;
-    background: #4b8ef1;
+    background: #F17300;
     border-radius: 50%;
 }
 
@@ -950,7 +956,7 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
+  background-color: #F17300;
   color: #fff !important;
 }
 
@@ -1024,8 +1030,8 @@ Services Style
   margin-left: 0px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
+  /* width: 90px; */
+  /* height:90px; */
   transition: all .3s;
 }
 
@@ -1049,36 +1055,36 @@ Services Style
 }
 
 .first-service .icon {
-  background-image: url(../images/service-icon-01.png);
+  /* background-image: url(../../../extra/assets/images/react-native.webp); */
 }
 
 .first-service:hover .icon {
-  background-image: url(../images/service-icon-hover-01.png);
+  /* background-image: url(../images/service-icon-hover-01.png); */
 }
 
 .second-service .icon {
-  background-image: url(../images/service-icon-02.png);
+  /* background-image: url(../images/service-icon-02.png); */
 }
 
 .second-service:hover .icon {
-  background-image: url(../images/service-icon-hover-02.png);
+  /* background-image: url(../images/service-icon-hover-02.png); */
 }
 
 
 .third-service .icon {
-  background-image: url(../images/service-icon-03.png);
+  /* background-image: url(../images/service-icon-03.png); */
 }
 
 .third-service:hover .icon {
-  background-image: url(../images/service-icon-hover-03.png);
+  /* background-image: url(../images/service-icon-hover-03.png); */
 }
 
 .fourth-service .icon {
-  background-image: url(../images/service-icon-04.png);
+  /* background-image: url(../images/service-icon-04.png); */
 }
 
 .fourth-service:hover .icon {
-  background-image: url(../images/service-icon-hover-04.png);
+  /* background-image: url(../images/service-icon-hover-04.png); */
 }
 
 .service-item:hover {
@@ -1135,7 +1141,7 @@ About Us
 }
 
 .about-us .box-item:hover h4 a {
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 .about-us .gradient-button {
@@ -1231,7 +1237,7 @@ The Clients
 .the-clients .naccs .menu div.active i,
 .the-clients .naccs .menu div.active span.rating,
 .the-clients .naccs .menu div.active .thumb {
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 .the-clients ul.nacc {
@@ -1390,7 +1396,7 @@ The Clients
 }
 
 .pricing-item-regular ul li {
-  color: #4b8ef1;
+  color: #F17300;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -1467,7 +1473,7 @@ The Clients
 }
 
 .pricing-item-pro ul li {
-  color: #4b8ef1;
+  color: #F17300;
   font-size: 15px;
   margin-bottom: 15px;
 }
@@ -1623,7 +1629,7 @@ footer #search button {
 
 footer #search button:hover {
   background-color: #fff;
-  color: #4b8ef1;
+  color: #F17300;
 }
 
 .footer-widget .logo img {
@@ -1718,13 +1724,13 @@ PopUp
 
 .btn {
   padding: 10px 20px;
-  background: #4b8ef1;
+  background: #F17300;
   color: #fff;
   transition: all .3s;
 }
 
 .btn_red {
-  background: #4b8ef1;
+  background: #F17300;
   color: #FFF;
 }
 
@@ -1777,7 +1783,7 @@ a.btn_red {
   right: 0;
   top: 0;
   padding: 10px 15px;
-  background: #4b8ef1;
+  background: #F17300;
   cursor: pointer;
   color: #fff;
   font-size: 16px;
@@ -1893,7 +1899,7 @@ a.btn_red {
   clear: both;
   overflow: hidden;
   text-decoration: none;
-  color: #4b8ef1;
+  color: #F17300;
   transition: all .3s;
 }
 /* User Register Form */
@@ -1988,7 +1994,7 @@ responsive
     margin-right: 0;
   }
   .main-banner .left-content .white-button a {
-    background-color: #4b8ef1;
+    background-color: #F17300;
     color: #fff !important;
   }
   form#contact {
@@ -2114,7 +2120,7 @@ responsive
   }
   footer #search button {
     background-color: #fff;
-    color: #4b8ef1;
+    color: #F17300;
   }
   footer #search input::placeholder { 
     color: #2a2a2a;

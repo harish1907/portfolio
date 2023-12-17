@@ -4,6 +4,7 @@ import HeadingLincImg from "../../extra/assets/images/heading-line-dec.png";
 import ContentBox from "../../Components/ContentBox";
 import AboutRightDec from "../../extra/assets/images/about-right-dec.png";
 import Quote from "../../extra/assets/images/quote.png";
+import Deepak from "../../extra/assets/images/pass-pic.jpeg";
 import ClientImage from "../../extra/assets/images/client-image.jpg";
 import Harish from "../../extra/assets/images/harish.png";
 import Yash from "../../extra/assets/images/yash.jpeg";
@@ -12,27 +13,43 @@ import { useEffect } from "react";
 import WowComponent from "../../WowComponent";
 import LinkedInComp from "../../Components/LinkedInComp";
 import GithubComp from "../../Components/GithubComp";
+import reactNative from "../../extra/assets/images/react-native.webp"
+import react from "../../extra/assets/images/reactjs.png";
+import chatbot from "../../extra/assets/images/chatbot.png";
+import micro from "../../extra/assets/images/microservice.png"
 
 const boxText = [
   {
     heading: "App Development with React Native.",
     text: `Crafting intuitive and powerful mobile experiences in React Native, where creativity meets functionality, to seamlessly connect users with innovative solutions.`,
     serviceType: "first-service",
+    icon: reactNative,
+    width: "100px",
+    height: "140px",
   },
   {
     heading: "Backend microservices management.",
     text: `Building robust and scalable web solutions in React Native, bridging the gap between performance and user experience for a cutting-edge digital presence.`,
     serviceType: "second-service",
+    icon: micro,
+    width: "100px",
+    height: "140px",
   },
   {
     heading: "Responsive Web Development.",
     text: `Designing interactive and dynamic web applications with React Native, where user engagement and performance converge to deliver a cutting-edge browsing experience.`,
     serviceType: "third-service",
+    icon: react,
+    width: "100px",
+    height: "140px",
   },
   {
     heading: `AI Chatbots and IoT devices`,
     text: "Empowering users through immersive experiences, leveraging the capabilities of React Native to bridge the gap between cutting-edge technology and user-centric design.",
     serviceType: "fourth-service",
+    icon: chatbot,
+    width: "80px",
+    height: "140px",
   },
 ];
 
@@ -152,7 +169,10 @@ const HomeScreen = () => {
                   heading={item.heading}
                   text={item.text}
                   serviceType={item.serviceType}
-                  icon
+                  icon={item.icon}
+                  width={item.width}
+                  height={item.height}
+                  // icon
                 />
               );
             })}
@@ -231,7 +251,7 @@ const HomeScreen = () => {
                 </h4>
                 <img src={HeadingLincImg} alt="" />
                 <p>
-                  At Chain App Dev, meet our team of five passionate experts who
+                  At Chain App Dev, meet our team of four passionate experts who
                   have successfully delivered over 90+ projects, blending
                   creativity with technical prowess. <br />
                   We don't just create; we innovate.
@@ -321,7 +341,7 @@ const HomeScreen = () => {
                             <div className="row">
                               <div className="col-lg-4 col-sm-4 col-12">
                                 <h4>Deepak Pradhan</h4>
-                                <LinkedInComp url="https://www.linkedin.com/in/piyush-sharma-20b029202/" />
+                                <LinkedInComp url="https://www.linkedin.com/in/deepak-pradhan-b41219192" />
                                 <GithubComp url="https://github.com/Pradhan1999"/>
                               </div>
                               <div className="col-lg-4 col-sm-4 d-none d-sm-block">
@@ -449,7 +469,7 @@ const HomeScreen = () => {
                                     </p>
                                   </div>
                                   <div className="down-content">
-                                    <img src={ClientImage} alt="" />
+                                    <img src={Deepak} alt="" />
                                     <div className="right-content">
                                       <h4>Deepak Pradhan</h4>
                                       <span>Front End Developer</span>
@@ -494,6 +514,7 @@ const HomeScreen = () => {
                       heading={item.heading}
                       text={item.text}
                       serviceType={item.serviceType}
+                      icon={"notRequired"}
                     />
                   );
                 })}
@@ -564,11 +585,22 @@ const HomeScreen = () => {
                 <h4>About Us</h4>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#top">Home</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                   </li>
+                  <li>
+                    <a href="#about">About</a>
+                  </li>
+                  {/* <li>
+                    <a href="#">Testimonials</a>
+                  </li> */}
+                  <li>
+                    <a href="#pricing">Pricing</a>
+                  </li>
+                </ul>
+                {/* <ul>
                   <li>
                     <a href="#">About</a>
                   </li>
@@ -578,18 +610,7 @@ const HomeScreen = () => {
                   <li>
                     <a href="#">Pricing</a>
                   </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Testimonials</a>
-                  </li>
-                  <li>
-                    <a href="#">Pricing</a>
-                  </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
             <div className="col-lg-4">
